@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from '../assets/logo.jpg';
 
 export default function Navbar({ currentPage, setPage, cartCount }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Navbar({ currentPage, setPage, cartCount }) {
     <nav className="navbar">
       <div className="navbar-inner">
         <div className="navbar-brand" onClick={() => navigate('home')}>
-          <div className="brand-logo">M</div>
+          <img className="brand-logo" src={logo} alt="Mikat's Sweet Cravings logo" />
           <div>
             <div className="brand-name">Mikat's Sweet Cravings</div>
             <div className="brand-tagline">Sweet Moments, Perfect Bites</div>
