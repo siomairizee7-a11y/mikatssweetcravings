@@ -1,0 +1,179 @@
+# 🛒 E-Commerce Website — Master Prompt Template
+> Copy this entire template, fill in all the `[BRACKETS]`, and paste it to Claude to build your complete e-commerce website.
+
+---
+
+## ✏️ HOW TO USE THIS TEMPLATE
+1. Replace every `[PLACEHOLDER]` with your actual business details.
+2. Remove any section you don't need by deleting the whole block.
+3. Paste the completed prompt into a new Claude chat.
+4. Claude will build your full website as a single React or HTML artifact.
+
+---
+
+---
+# ======= START OF PROMPT (Copy everything below this line) =======
+---
+
+Build me a complete, fully functional **multi-page e-commerce website** as a single React artifact with the following specifications. Use React state for navigation between pages (no external routing). The site should be visually polished, mobile-responsive, and production-ready.
+
+---
+
+## 🏢 BUSINESS INFORMATION
+
+- **Business Name:** [Mikat's Sweet Cravings]
+- **Tagline / Slogan:** [Sweet Moments, Perfect Bites]
+- **Business Type:** [Home-Based Bakery]
+- **Location / Area Served:** [Calixto Zaldivar Street San Jose, Antique]
+- **Contact Number:** [0930-225-0223]
+- **Facebook / Social Media:** [facebook.com/glory mae caldera]
+- **Business Hours:** [Monday–Saturday, 8AM–5PM]
+- **Currency:** [Philippine Peso (₱)]
+- **Payment Methods Accepted:** [GCash, Cash on Delivery]
+- **GCash / Maya Number (if any):** [0962-353-7072 — Glory Mae]
+- **Delivery / Shipping Policy:** [Free delivery within San Jose, Antique]
+
+---
+
+## 🎨 DESIGN PREFERENCES
+
+- **Color Scheme:** [Brick Pink, white,and baby blue]
+- **Overall Vibe / Aesthetic:** [Sweet and colorful]
+- **Any fonts you like:** [ Clean and modern ]
+
+---
+
+## 📄 PAGE 1 — HOME PAGE
+
+### Hero Section
+- **Headline:** [Sweet Moments, Perfect Bite]
+- **Sub-headline:**["Indulge in custom cakes that make every moment sweeter"]
+- **Call-to-Action Button Text:** [Order your dream cake today]
+
+### About the Business Section
+- **Story / Description:** [At Mikat's Sweet and Cravings, we bake with love to make every celebration sweeter]
+- **Why Choose Us (3–6 bullet points)*
+  - [ Made fresh every day]
+  - [ No preservatives, all-natural ingredients]
+  - [Available for delivery and pick-up]
+  - [Affordable prices]
+  - [ Bulk and event orders welcome]
+  - [Offer customization]
+
+
+---
+
+## 📦 PAGE 2-Cake Product Page
+
+List all your products below. Follow this format for each item:
+
+### Product/Service 1
+- **Name:** [cakes]
+- **Category:** [Wedding cake, Birthday cake, Custom cake, cupcakes, cake pops, themed cake, flavored cake]
+- **Description:** [e.g. Soft, fluffy rice cake topped with salted egg and cheese. Best served warm.]
+- **Price:** [price range from 250-5,000]
+- **Available Variants (if any):** [chocolate, vanilla, red velvet, ube, strawberry, caramel]
+- **Stock Status:**  Available / Pre-order only / Seasonal
+
+
+
+## 🛍️ PAGE 3 — ORDERING PAGE (Checkout)
+
+- **Order Form Fields to Include:**
+  - [x] Customer Full Name
+  - [x] Contact Number
+  - [x] cake flavor and theme
+  - [x] Delivery Address OR Pick-up
+  - [x] Product Selection + Quantity
+  - [x] Special Instructions / Notes
+  - [x] Preferred Payment Method
+  - [x] Preferred Delivery Date (optional)
+
+- **Order Confirmation Message:** [Your cake order is confirmed! We'll bake fresh and notify you when its Ready to pick up/deliver]
+- **After Order Submission — What should happen?**
+  - [x] Show a confirmation screen with order summary
+  
+  
+
+---
+
+## 🔐 PAGE 4 — ADMIN DASHBOARD (Password Protected)
+
+- **Admin Password:** [mamamo123]
+- **Admin Page Title:** [Mikat's admin]
+
+### Orders Section (Auto-populated from customer orders)
+The admin should see a table with all submitted orders showing:
+  - [x] Order Number (auto-generated)
+  - [x] Date & Time of Order
+  - [x] Customer Name & Contact
+  - [x] Items Ordered + Quantities
+  - [x] Total Amount
+  - [x] Payment Method
+  - [x] Delivery Address
+  - [x] Order Status (Pending / Confirmed / Preparing / Delivered / Cancelled)
+  - [x] Admin can update order status via dropdown
+  - [x] Admin can delete/remove orders
+
+### Export / Download Orders
+  - [x] Export orders as CSV file (downloadable spreadsheet)
+
+### Business Analytics Dashboard
+Show the following charts and stats based on order data:
+  - [x] Total Revenue (all time + this month)
+  - [x] Total Number of Orders
+  - [x] Best-Selling Products (bar chart or ranked list)
+  - [x] Orders by Status (bar chartPending / Confirmed / Delivered / Cancelled)
+  - [x] Daily/Weekly Order Volume (line chart)
+  - [x] Average Order Value
+  - [x] Top Customers by order count (optional)
+
+---
+
+## ⚙️ TECHNICAL REQUIREMENTS
+
+- **Framework:** React (single artifact, no external router)
+- **Charts Library:** Use Recharts for analytics charts
+- **Data Storage:** Use React state + localStorage so orders persist across page refreshes
+- **Navigation:** Top navigation bar with links to all pages; mobile hamburger menu
+- **Responsive:** Must work on mobile, tablet, and desktop
+- **Admin Access:** Hidden or separate nav item labeled "Admin" that asks for a password
+- **No backend needed** — all data stored in localStorage for now
+
+---
+
+## 📝 ADDITIONAL NOTES / SPECIAL REQUESTS
+
+[Write anything else you want — e.g.:
+- "Add a floating WhatsApp or Messenger button"
+- "Include a photo gallery section on the Home page"
+- "Add a promo banner at the top saying FREE DELIVERY this weekend"
+- "Make the site bilingual — English
+
+---
+# ======= END OF PROMPT =======
+---
+
+---
+
+## 📌 QUICK REFERENCE — WHAT EACH PAGE DOES
+
+| Page | Purpose |
+|---|---|
+| **Home Page** | First impression — Hero, About, Why Us, Testimonials |
+| **Products & Services** | Full catalog with descriptions, prices, variants |
+| **Ordering / Checkout** | Customer fills order form; submits order |
+| **Admin Dashboard** | View all orders, update status, download CSV, see analytics |
+
+---
+
+## 💡 TIPS FOR BEST RESULTS
+
+- **The more detail you give, the better the output.** Don't leave brackets empty — fill in everything.
+- **For products**, write clear, appetizing descriptions. Good descriptions = better-looking product cards.
+- **For the color scheme**, you can say things like: "colors of a sunset", "tropical green and yellow", "earthy tones like coffee and cream".
+- **Admin password** — change it to something only you know before using the site for real.
+- **Want changes after?** Just tell Claude: *"Change the color to blue"* or *"Add a new product: Sapin-sapin, ₱200"* and it will update the artifact.
+- **For a real website**, copy the final code and host it on Netlify, Vercel, or GitHub Pages for free.
+
+---
